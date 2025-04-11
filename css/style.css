@@ -8,6 +8,7 @@
 
 body{
     margin-right: 30px;
+    color: white;
     margin-left: 30px;
     background-color: var(--primary-color);
 }
@@ -188,7 +189,7 @@ header{
 .like-deslike{
     display: flex;
     gap: 20px;
-    color: white;
+   color: white;
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 40px;
@@ -197,6 +198,7 @@ header{
 }
 .like i{
     margin-right: 10px;
+    color: rgba(255, 255, 255, 0.315);
 }
 .like{
     border-right: 1px solid rgba(255, 255, 255, 0.336);
@@ -214,6 +216,7 @@ header{
 .like:hover{
     background-color: #464646;
     cursor: pointer;
+    width: 100%;
     border-right: 1px solid rgba(255, 255, 255, 0.336);
 }
 .infochannel{
@@ -251,7 +254,8 @@ header{
 /* Video */
 main{
     display: flex;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 20px;
     width: 100%;    
 }
@@ -365,4 +369,99 @@ h6{
     font-size: 14px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
+}
+
+.LikeAndShare {
+    font-size: 20px;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+.share {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    height: 1px;
+    padding: 20px;
+    color: #e0e0e0;
+    background-color: #464646;
+}
+.Add {
+    overflow: hidden;
+    font-size: 30px;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #e0e0e0;
+    background-color: #464646;
+}
+.Add img {
+    border-radius: 100%;
+}
+.descricao{
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 20%;
+}
+.descricao h4{
+    color: white;
+}
+.descricao p{
+    padding-left: 15px;
+}
+.descricao div{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}   
+.more{
+    margin-top: 50px;
+}
+
+/* description */
+.base{
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.qtdComentario{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.insertCom{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.insertCom h4{
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.comentarios{
+    display: flex;
+    flex: row;
+    margin-top: 25px;
+    align-items: center;
+    gap: 10px;
+}
+
+.comentarios input{
+    margin: 0;
+    width: 450px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
 }
