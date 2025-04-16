@@ -169,10 +169,15 @@ header{
     background-color: var(--primary-color);
     height: 40px;
     width: 40px;
-    /* background-repeat: no-repeat; */
     background-position: center;
     border-radius: 100%;
     cursor: pointer;
+}
+
+.left{
+    display: flex;
+    width:75%;
+    flex-direction: column;
 }
 
 .info h1{
@@ -189,7 +194,7 @@ header{
 .like-deslike{
     display: flex;
     gap: 20px;
-   color: white;
+    color: white;
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 40px;
@@ -216,7 +221,6 @@ header{
 .like:hover{
     background-color: #464646;
     cursor: pointer;
-    width: 100%;
     border-right: 1px solid rgba(255, 255, 255, 0.336);
 }
 .infochannel{
@@ -254,6 +258,8 @@ header{
 /* Video */
 main{
     display: flex;
+    width: 100%;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     gap: 20px;
@@ -264,8 +270,9 @@ main{
 }
 
 .video iframe{
-    width: 800px;
-    height: 380px;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     outline: none;
     border: none;
@@ -401,11 +408,10 @@ h6{
     align-items: center;
     padding: 10px;
     color: #e0e0e0;
+    align-items: flex-end;
     background-color: #464646;
 }
-.Add img {
-    border-radius: 100%;
-}
+
 .descricao{
     background-color: var(--secondary-color);
     margin-top: 20px;
@@ -429,6 +435,8 @@ h6{
 }
 
 /* description */
+
+/*  Comentário  */
 .base{
     margin-top: 25px;
     padding: 20px;
@@ -457,6 +465,9 @@ h6{
     align-items: center;
     gap: 10px;
 }
+.insereComentario{
+    width: 100%;
+}
 
 .comentarios input{
     margin: 0;
@@ -465,3 +476,51 @@ h6{
     border: none;
     border-bottom: 1px solid var(--secondary-color);
 }
+#Ovo{
+    outline: none;
+    width: 100%;
+}
+/* Comentario dos cabra */
+.comentário{
+    gap: 2px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+    .comentário .user{
+        border-radius: 100%;
+        width: 38px;
+        height: 38px;
+    }
+    .texto-parent{
+        margin-left: 10px;
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+    }
+        .texto{
+            align-items: center;
+            gap: 8px;
+            display: flex;
+            flex-direction: row;
+        }
+            .data-comentário{
+                font-size: 0.8rem;
+                margin-left: 0.2rem;
+                color: #9292926e;
+            }
+                .likeunlike{
+                    cursor: pointer;
+                    display: flex;
+                }
+                .likeunlike .like{
+                    border-right: none;
+                }
+                
+                .responder-coment{
+                    cursor: pointer;
+                    background-color: var(--primary-color);
+                    border: none;
+                    color: white;
+                    border-radius: 20px;
+                }
